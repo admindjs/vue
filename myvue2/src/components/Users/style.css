@@ -1,0 +1,38 @@
+
+.el-table .warning-row {
+  background: oldlace;
+}
+
+.el-table .success-row {
+  background: #f0f9eb;
+}
+.has-gutter {
+  line-height: 30px;
+}
+.el-breadcrumb {
+  line-height: 30px;
+}
+.el-input {
+  line-height: 28px;
+}
+.el-input-group__append {
+  height: 20px;
+}
+.el-row {
+  line-height: 40px;
+}
+.el-dialog__header,
+.dialog-footer {
+  line-height: 30px;
+}
+.el-dialog__title {
+  color: deeppink;
+  font-size: 30px;
+}
+.el-main {
+    line-height: 30px;
+  }
+  .has-gutter{
+    line-height: 30px;
+  }
+

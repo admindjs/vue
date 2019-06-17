@@ -1,0 +1,17 @@
+.has-gutter{
+  line-height:30px;
+}
+.el-breadcrumb {
+
+  line-height: 3;
+}
+.el-main {
+  background-color: #e9eef3;
+  color: #333;
+  text-align: left;
+  line-height: 30px;
+}
+.el-tag{
+  margin-left:10px;
+  width:120px;
+}

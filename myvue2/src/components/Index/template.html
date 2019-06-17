@@ -1,0 +1,52 @@
+<div >
+<el-container>
+  <el-header  >
+    <!-- 头部 -->
+    <el-row>
+      <el-col :span="5">
+        <div class="grid-content bg-purple">
+          <img src="../../assets/img/22.jpg" alt width="214" height="56">
+        </div>
+      </el-col>
+      <el-col :span="11">
+        <div class="grid-content bg-purple-light">华联后台</div>
+      </el-col>
+      <el-col :span="8">
+        <div class="grid-content bg-purple">
+
+
+          <el-col :span="12">
+            你好<el-link type="primary">bug小能手</el-link>
+          </el-col>
+          <el-col :span="12">
+            <el-button type="info" plain @click="logout()">退出</el-button>
+          </el-col>
+
+        </div>
+      </el-col>
+    </el-row>
+  </el-header>
+  <el-container>
+    <!-- 侧边栏 -->
+    <el-aside width="200px">
+      <el-menu default-active="2" class="el-menu-vertical-demo" background-color="#545c64" text-color="#fff"
+        active-text-color="#ffd04b" router>
+        <el-submenu v-for="item in menusListData" :key="item.id" :index="item.path">
+          <template slot="title">
+            <i class="el-icon-location"></i>
+            <span>{{item.authName}}</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item v-for="item2 in item.children" :key="item2.id" :index="item2.path">{{item2.authName}}
+            </el-menu-item>
+          </el-menu-item-group>
+        </el-submenu>
+      </el-menu>
+    </el-aside>
+    <!-- 内容 -->
+    <el-main class="img">
+      <router-view></router-view>
+    </el-main>
+  </el-container>
+</el-container>
+</div>
